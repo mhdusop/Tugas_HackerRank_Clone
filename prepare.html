@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://hrcdn.net/community-frontend/assets/modules~hackerrank_r_app-260d5c6c.css">
+    <link rel="icon" type="image/png" href="https://hrcdn.net/community-frontend/assets/favicon-ddc852f75a.png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/prepare.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Navbar -->
+      <div class="topbar">
+        <div class="navbar">
+            <ul class="links">
+                <li>
+                    <a href="#">
+                        <img src="https://hrcdn.net/community-frontend/assets/brand/logo-new-white-green-a5cb16e0ae.svg" alt="Logo" class="logoimg">
+                    </a>
+                </li>
+                <li>
+                    <a href="prepare.html" class="new">
+                        <div class="selected">PREPARE</div>
+                        <div class="new-badge">NEW</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="certify.html">
+                        <div class="box">CERTIFY</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="compete.html">
+                        <div class="box">COMPETE</div>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="buttons">
+                <li class="search-padding">
+                    <div class="search-box">
+                        <i class="ui-icon-search"></i>
+                        <input type="text" placeholder="Search" class="search-text">
+                    </div>
+                </li>
+                <li>
+                    <div class="message-notif-profile" id="menu1">
+                        <div class="icon-box">
+                            <i class="dropdown-icon ui-icon-message dropdown" id="dropdown1" onclick="showBox('menu1')"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="message-header">
+                                <strong class="icon-title">Messages</strong>
+                            </div>
+                            <div class="message-inbox">
+                                <div class="message-text">
+                                    You have no unread messages.
+                                </div>
+                            </div>
+                            <div class="message-notif-footer">
+                                <a href="#" class="show-all">Show All</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="message-notif-profile" id="menu2">
+                        <div class="icon-box">
+                            <i class="dropdown-icon ui-icon-notification dropdown" id="dropdown2" onclick="showBox('menu2')"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="notif-header">
+                                <strong class="icon-title">Notifications</strong>
+                                <a href="#">Archive All</a>
+                            </div>
+                            <div class="notif-inbox">
+                                <ul>
+                                    <li class="notif-income-container">
+                                        <div class="notif-icon">
+                                            <img src="https://hrcdn.net/community-frontend/assets/forum_mailer/notifymarker-4be6d5a4c8.png" alt="Notification">
+                                        </div>
+                                        <div class="notif-subject">
+                                            <div class="notif-text">
+                                                <div>Get interview ready for top companies.</div>
+                                                <div class="notif-time">
+                                                    <small>1 week ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="notif-income-container borderless">
+                                        <div class="notif-icon">
+                                            <img src="https://hrcdn.net/community-frontend/assets/forum_mailer/notifymarker-4be6d5a4c8.png" alt="Notification">
+                                        </div>
+                                        <div class="notif-subject">
+                                            <div class="notif-text">
+                                                <div>Improve your coding skills. Join our 30 Days of Code challenge!</div>
+                                                <div class="notif-time">
+                                                    <small>1 week ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="message-notif-footer">
+                                <a href="#" class="show-all">Show All</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="dropdown3" onclick="showBox('menu3')" class="dropdown">
+                    <div class="message-notif-profile" id="menu3" style="margin-left: 10px;">
+                        <div class="user-profile">
+                            <i class="ui-icon-user"></i>
+                            <span class="username">melvinjovano2</span>
+                            <i class="ui-icon-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-menu sempit">
+                            <ul class="profile-item-container">
+                                <li class="profile-item-box borderless">
+                                    <a href="#" class="hackos">Hackos: 105</a>
+                                </li>
+                                <li class="profile-item">
+                                    <a href="#" class="profile-progress"> 
+                                        Profile
+                                        <div class="circle-wrap">
+                                            <div class="circle">
+                                                <div class="mask full">
+                                                    <div class="fill"></div>
+                                                </div>
+                                                <div class="mask half">
+                                                    <div class="fill"></div>
+                                                </div>
+                                                <div class="persen"><strong>33%</strong></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="profile-item tampilan-block">
+                                    <a href="#">Leaderboard</a>
+                                </li>
+                                <li class="profile-item tampilan-block">
+                                    <a href="#">Setting</a>
+                                </li>
+                                <li class="profile-item tampilan-block">
+                                    <a href="#">Bookmarks</a>
+                                </li>
+                                <li class="profile-item tampilan-block">
+                                    <a href="#">Network</a>
+                                </li>
+                                <li class="profile-item tampilan-block">
+                                    <a href="#">Submissions</a>
+                                </li>
+                                <li class="profile-item tampilan-block">
+                                    <a href="#">Administration</a>
+                                </li>
+                                <li class="profile-item borderless tampilan-block">
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+      <!-- Header -->
+      <header class="container-fluid bg-white header-container">
+        <div class="container-sm">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Prepare</li>
+          </ol>
+          <h1 class="header-title">Dashboard</h1>
+        </div>
+      </header>
+
+      <!-- Section -->
+      <section class="container-fluid">
+        <!-- Your Preparation -->
+        <div class="container-sm">
+          <h2 class="title">Your Preparation</h2>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-headline">Preparation Kits</h2>
+                  <h6 class="card-title">Interview Preparation Kit</h6>
+                  <p class="card-text">
+                    Get interview ready for top companies by solving 
+                    <br>
+                    an interview preparation kit.
+                  </p>
+                  <a href="#" class="btn btn-kits">View all Kits</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-headline">New Skill</h2>
+                  <h6 class="card-title">Add your first skill</h6>
+                  <p class="card-text">
+                    Explore and add your first skill to get started. HackerRank offers a variety of skills, tracks and tutorials for you to learn and improve.
+                  </p>
+                  <a href="#" class="btn btn-skills">Explore Skills</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification -->
+          <h2 class="title">Certification</h2>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card card-certification">
+                <div class="card-body">
+                  <h6 class="card-title">Problem Solving (Basic)</h6>
+                  <a href="#" class="btn btn-certification">Get Certified</a>
+                  <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/ProblemSolving.svg" class="logo1" alt="Logo">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card card-certification">
+                <div class="card-body">
+                  <h6 class="card-title">Python (Basic)</h6>
+                  <a href="#" class="btn btn-certification">Get Certified</a>
+                  <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/Python.svg" class="logo1" alt="Logo">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card card-certification">
+                <div class="card-body card-black">
+                  <h6 class="card-title text-white-title">Stand out from the crowd</h6>
+                  <p class="card-text text-white">
+                    Take the HackerRank Skills Certification Test and make your profile stand out
+                  </p>
+                  <a href="#" class="btn btn-certification-black">View All Skills</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- prepare By Topics -->
+        <div class="container">
+          <h2 class="title">Prepare By Topics</h2>
+          <div class="container-topic">
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/Algorithm.svg" alt="logo" height="24">
+                <p class="topic-name">Algorithms</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/DataStructure.svg" alt="logo" height="24">
+                <p class="topic-name">Data Structures</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/Mathematics.svg" alt="logo" height="24">
+                <p class="topic-name">Mathematics</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/AI.svg" alt="logo" height="24">
+                <p class="topic-name">Artificial Intelligence</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/C.svg" alt="logo" height="24">
+                <p class="topic-name">C</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/C++.svg" alt="logo" height="24">
+                <p class="topic-name">C++</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/Java.svg" alt="logo" height="24">
+                <p class="topic-name">Java</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/Python.svg" alt="logo" height="24">
+                <p class="topic-name">Python</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/Ruby.svg" alt="logo" height="24">
+                <p class="topic-name">Ruby</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/SQL.svg" alt="logo" height="24">
+                <p class="topic-name">SQL</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/DataBase.svg" alt="logo" height="24">
+                <p class="topic-name">Databases</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/LinuxShell.svg" alt="logo" height="24">
+                <p class="topic-name">Linux Shell</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/FunctionalProgramming.svg" alt="logo" height="24">
+                <p class="topic-name">Functional Programming</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                <img src="https://hrcdn.net/s3_pub/hr-assets/dashboard/regex.svg" alt="logo" height="24">
+                <p class="topic-name">Regex</p>
+              </div>
+            </div>
+            <div class="card card-topic">
+              <div class="card-body card-body-topic">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preparation Kits -->
+        <div class="container">
+          <h2 class="title">Preparation Kits <span class="link-kits"><a href="#">View All Kits</a></span></h2>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card card-certification">
+                <div class="card-body">
+                  <h6 class="card-title card-title-head">1 Week Preparation Kits</h6>
+                  <p class="card-title-body">Challanges: 21, Attempts: 226467, Mock test: 0</p>
+                  <a href="#" class="btn btn-kits-preparation">Problem Solving(Basic)</a>
+                  <a href="#" class="btn btn-kits-preparation">Problem Solving(Intermediate)</a>
+                  <img src="https://hr-assets.s3.amazonaws.com/interview/one-week-preparation-kit.svg" class="logo-kits" alt="Logo">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card card-certification">
+                <div class="card-body">
+                  <h6 class="card-title card-title-head">1 Month Preparation Kits</h6>
+                  <p class="card-title-body">Challanges: 21, Attempts: 226467, Mock test: 0</p>
+                  <a href="#" class="btn btn-kits-preparation">Problem Solving(Basic)</a>
+                  <a href="#" class="btn btn-kits-preparation">Problem Solving(Intermediate)</a>
+                  <img src="https://hr-assets.s3.amazonaws.com/interview/one-week-preparation-kit.svg" class="logo-kits" alt="Logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-white shadow-sm fs-6 p-3 text-sm text-center text-blue-500 tracking-wide mt-5">
+        <a href="https://www.hackerrank.com/calendar">Contest Calendar</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/blog/">Blog</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/scoring">Scoring</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://support.hackerrank.com/hc/en-us/articles/1500002392722-Execution-Environment">Environment</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/faq">FAQ</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/about-us">About Us</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://help.hackerrank.com/hc/en-us">Support</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/careers">Careers</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/terms-of-service">Terms Of Service</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/privacy">Privacy Policy</a><span class="text-slate-300 cursor-default"> | </span>
+        <a href="https://www.hackerrank.com/support/feature">Request a Feature</a>
+      </footer>
+    
+      <script src="js/Compete.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

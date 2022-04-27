@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500;600;700&family=Syne+Mono&display=swap');
+#notification-dropdown, #message-dropdown {
+    width: 425px;
+}
+.underline-on-hover:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: #f3f7f7;
+} 
+* {
+    font-family: Open Sans;
+}
+.text-13px {
+    font-size: 13px;
+}
+.text-10px {
+    font-size: 10px;
+}
+.navbar {
+    background-color: #39424e;
+    padding: 0 8%;
+}
+.shadow-md-on-hover:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.img-profile {
+    max-width: 25px;
+    width: 25px;
+    height: 25px;
+    max-height: 25px;
+}
+.grey-on-hover:hover {
+    background-color: #e7eeef;
+}
+.badge {
+    background-color: rgb(9, 123, 191);
+    border-radius: 7px;
+    width: 35px;
+    height: 15px;
+    text-align: center;
+    padding-bottom: 1px;
+    top: -11px;
+}
+.active {
+    background-color: hsl(141, 72%, 38%);
+    bottom: -21px;
+    height: 5px;
+}
+.span-container {
+    width: 150px;
+}
+.focused {
+    background-color: rgb(11, 11, 11);
+}
+.ac-input {
+    width: 110px;
+    border: none;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.spanned {
+    background-color: #0e141e;
+    animation: span .3s forwards;
+}
+.spannedout {
+    background-color: transparent;
+    animation: spanOut .3s forwards;
+}
+@keyframes span {
+    0%{
+        width: 120px;
+    }
+    100%{
+        width: 210px;
+    }
+}
+@keyframes spanOut {
+    0%{
+        width: 210px;
+    }
+    100%{
+        width: 120px;
+    }
+}
+.linear {
+    background-image: linear-gradient(140deg,#193b84 15%,#037bc1);
+}
+.card-img {
+    right: -10%;
+    height: 85%;
+}
+.hackos {
+    background-color: #4691f6;
+}
+.hackos:hover {
+    font-weight: 800;
+}
+.text-menu:hover {
+    font-weight: 800;
+}
+.arc {
+    border-radius: 100%;
+    border-width: 10px;
+}
+.arc_start {
+    border-color: #56aa4d transparent transparent transparent;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.arc_end {
+    border-color: #56aa4d transparent transparent transparent;
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+}
+.active-icon {
+    background-color: #0e141e;
+}
+.animate {
+    animation: slideDown .2s forwards ease-in;
+}
+@keyframes slideDown {
+    0%{
+        opacity: .3;
+        top: 25px;
+    }
+    100%{
+        top: 30px;
+        opacity: 1;
+    }
+}

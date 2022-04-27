@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contests | HackerRank</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro">
+        <link rel="icon" href="https://hrcdn.net/community-frontend/assets/favicon-ddc852f75a.png">
+        <link rel="stylesheet" type="text/css" href="https://hrcdn.net/community-frontend/assets/modules~hackerrank_r_app-260d5c6c.css">
+        <link rel="stylesheet" href="css/compete.css">
+
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="navbar">
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <img src="https://hrcdn.net/community-frontend/assets/brand/logo-new-white-green-a5cb16e0ae.svg" alt="Logo" class="logoimg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="prepare.html" class="new">
+                            <div class="box">PREPARE</div>
+                            <div class="new-badge">NEW</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="certify.html">
+                            <div class="box">CERTIFY</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="compete.html">
+                            <div class="selected">COMPETE</div>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="buttons">
+                    <li class="search-padding">
+                        <div class="search-box">
+                            <i class="ui-icon-search"></i>
+                            <input type="text" placeholder="Search" class="search-text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="message-notif-profile" id="menu1">
+                            <div class="icon-box">
+                                <i class="dropdown-icon ui-icon-message dropdown" id="dropdown1" onclick="showBox('menu1')"></i>
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="message-header">
+                                    <strong class="icon-title">Messages</strong>
+                                </div>
+                                <div class="message-inbox">
+                                    <div class="message-text">
+                                        You have no unread messages.
+                                    </div>
+                                </div>
+                                <div class="message-notif-footer">
+                                    <a href="#" class="show-all">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="message-notif-profile" id="menu2">
+                            <div class="icon-box">
+                                <i class="dropdown-icon ui-icon-notification dropdown" id="dropdown2" onclick="showBox('menu2')"></i>
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="notif-header">
+                                    <strong class="icon-title">Notifications</strong>
+                                    <a href="#">Archive All</a>
+                                </div>
+                                <div class="notif-inbox">
+                                    <ul>
+                                        <li class="notif-income-container">
+                                            <div class="notif-icon">
+                                                <img src="https://hrcdn.net/community-frontend/assets/forum_mailer/notifymarker-4be6d5a4c8.png" alt="Notification">
+                                            </div>
+                                            <div class="notif-subject">
+                                                <div class="notif-text">
+                                                    <div>Get interview ready for top companies.</div>
+                                                    <div class="notif-time">
+                                                        <small>1 week ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="notif-income-container borderless">
+                                            <div class="notif-icon">
+                                                <img src="https://hrcdn.net/community-frontend/assets/forum_mailer/notifymarker-4be6d5a4c8.png" alt="Notification">
+                                            </div>
+                                            <div class="notif-subject">
+                                                <div class="notif-text">
+                                                    <div>Improve your coding skills. Join our 30 Days of Code challenge!</div>
+                                                    <div class="notif-time">
+                                                        <small>1 week ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="message-notif-footer">
+                                    <a href="#" class="show-all">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="dropdown3" onclick="showBox('menu3')" class="dropdown">
+                        <div class="message-notif-profile" id="menu3" style="margin-left: 10px;">
+                            <div class="user-profile">
+                                <i class="ui-icon-user"></i>
+                                <span class="username">melvinjovano2</span>
+                                <i class="ui-icon-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-menu sempit">
+                                <ul class="profile-item-container">
+                                    <li class="profile-item-box borderless">
+                                        <a href="#" class="hackos">Hackos: 105</a>
+                                    </li>
+                                    <li class="profile-item">
+                                        <a href="#" class="profile-progress"> 
+                                            Profile
+                                            <div class="circle-wrap">
+                                                <div class="circle">
+                                                    <div class="mask full">
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                    <div class="mask half">
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                    <div class="persen"><strong>33%</strong></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="profile-item tampilan-block">
+                                        <a href="#">Leaderboard</a>
+                                    </li>
+                                    <li class="profile-item tampilan-block">
+                                        <a href="#">Setting</a>
+                                    </li>
+                                    <li class="profile-item tampilan-block">
+                                        <a href="#">Bookmarks</a>
+                                    </li>
+                                    <li class="profile-item tampilan-block">
+                                        <a href="#">Network</a>
+                                    </li>
+                                    <li class="profile-item tampilan-block">
+                                        <a href="#">Submissions</a>
+                                    </li>
+                                    <li class="profile-item tampilan-block">
+                                        <a href="#">Administration</a>
+                                    </li>
+                                    <li class="profile-item borderless tampilan-block">
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <header class="belownav">
+            <div class="container">
+                <div class="teks1">
+                    <p>All Contests</p>
+                    <h1>Contests</h1>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="main-container">
+                <div class="left-container">
+                    <div class="active-contest">
+                        <h5 class="title-contests">Active Contests</h5>
+                        <div class="contests-container">
+                            <div class="box-contests">
+                                <div class="inside-box-active">
+                                    <h4>ProjectEuler+</h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Open Indefinitely
+                                        </span>
+                                        <div class="view-sign">
+                                            <a href="#" class="view-details">View Details</a>
+                                            <a href="#">
+                                                <div class="sign-button">
+                                                    Sign Up
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        HackerRank brings you the fun of solving Projecteuler challenges with hidden test cases and time limit 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="archived-contests">
+                        <h5 class="title-contests">Archived Contests</h5>
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        DTCC Code-A-Thon
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Aug 27th 2021, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <img src="https://hrcdn.net/s3_pub/istreet-assets/-Nl0DJkFlHJFO3Rl-FuwOQ/Rd%2002-26918_HackerRank%20Code-A-Thon_Twitter_1024x512.jpg" alt="DTCC Code-A-Thon Picture" height="297" width="596">
+                                    <p class="rated-text-nomargin">
+                                        Welcome to the DTCC Code-A-Thon. Compete against developers from around the world to solve a series of coding questions, win prizes, and be considered for a job at DTCC.
+                                        <br>
+                                        With over 45 years of experience, DTCC is the premier post-trade market infrastructure for the global financial services industry. From 21 locations around the world, DTCC, through its subsidiaries, automates, centralizes and standardizes the processing of financial transactions, mitigating risk, increasing transparency and driving efficiency for thousands of broker/dealers, custodian banks and asset managers. Industry owned and governed, the firm simplifies the complexities of clearing, settlement, asset servicing, data management, data reporting and information services across asset classes, bringing increased security and soundness to financial markets.
+                                        <br>
+                                        To learn more, please visit us at <a href="https://www.dtcc.com">www.dtcc.com</a> or connect with us on <a href="https://www.linkedin.com/company/dtcc">LinkedIn</a>, <a href="https://twitter.com/The_DTCC">Twitter</a>, <a href="https://www.youtube.com/c/TheDTCC1973">YouTube</a> and <a href="https://www.facebook.com/thedtcc">Facebook</a>. Join <a href="https://dtccpontoon.avature.net/talent">DTCC’s Talent Community</a> today to stay in engaged with the latest updates. To learn about career opportunities at DTCC, please visit <a href="https://careers.dtcc.com/">careers.dtcc.com</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        National Disability Independence Day 2021 Coding Contest
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jul 23rd 2021, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's Celebrate National Disability Independence Day 2021 Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for people with disabilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Celebrate PRIDE 2021 Coding Contest
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jun 25th 2021, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's Celebrate PRIDE 2021 Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for members of the LGBTQIA+ individuals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Celebrate Juneteenth 2021 Coding Contest
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jun 18th 2021, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's Celebrate Juneteenth 2021 Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for African-Americans/Black individuals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        COVID-19 Relief for India Coding Challenge
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jun 16th 2021, 1:30 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's COVID-19 Relief for India Coding Challenge, a coding contest in support of the ongoing fight against the coronavirus in India.
+                                        <br>
+                                        New cases of COVID-19 in India continue to surpass 100,000 each day, with oxygen and hospital beds in short supply and millions in need of care. In this contest, you will compete against coders from around the world to donate to <a href="https://www.giveindia.org/">GiveIndia&nbsp;Foundation</a> and support their effort to supply oxygen, care facilities, and financial support to victims of the virus.
+                                        <br>
+                                        You will have 2 hours to solve a series of 4 coding questions. Good luck!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Asian Pacific American Heritage Month 2021 Coding Contest
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            May 21st 2021, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's Celebrate Asian Pacific Heritage Month 2021 Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for Asian and Pacific Islander American individuals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Celebrate Neurodiversity Coding Contest 2021
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Apr 16th 2021, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's Celebrate Neurodiversity Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for neurodiverse individuals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        International Women's Day Coding Contest 2021
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Mar 8th 2021, 12:00 am WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's International Women's Day Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for women in tech.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Black History Month Coding Contest 2021
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Feb 27th 2021, 12:00 am WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's Black History Month Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases educational opportunities for underrepresented and under-resourced groups.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack For A Cause 2020
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Dec 19th 2020, 3:00 am WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to HackerRank's <span class="tebal">Hack For A Cause</span>, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $100 to a U.S. charity that increases educational opportunities for underrepresented and under-resourced groups.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview VII (U.S.)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Aug 28th 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to Hack the Interview, a university coding contest where you can show off your skills and practice for interviews. The top scorers from the U.S. will have a chance to win Amazon gift cards worth up to $500 and have their results shared with sponsor companies.
+                                        <br>
+                                        This contest begins <span class="tebal">Friday, August 28th at 12 p.m. EDT / 9 p.m. PDT</span>. Once you begin, you will have 2 hours to complete a series four coding challenges.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview VII (APAC)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Aug 28th 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text-nomargin">
+                                        Welcome to Hack the Interview, a university coding contest where you can show off your skills and practice for interviews. The top scorers from the U.S. will have a chance to win Amazon gift cards worth up to $500 and have their results shared with sponsor companies.
+                                        <br>
+                                        This contest begins <span class="tebal">Friday, August 28th 9:30 p.m. IST</span>. Once you begin, you will have 2 hours to complete a series four coding challenges.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Amazon Last Mile Coding Challenge 2022
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Apr 2nd, 4:00 am WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        Please provide a short description of your contest here! This will also be used as metadata.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        ServiceNow Women Code to Win
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Feb 11th, 6:30 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        ServiceNow's Early in Career team is organizing a series of professional development workshops followed by a nationwide contest for women students. Participate and bring out the best in you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Justice League 1639642697
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Dec 16th 2021, 3:15 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Rated Contest</h5>
+                                    <p class="rated-text">
+                                        Please provide a short description of your contest here! This will also be used as metadata.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        HackerRank HackFest 2020
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Oct 9th 2020, 11:30 am WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Rated Contest</h5>
+                                    <p class="rated-text">
+                                        HackerRank Hackfest 2020 is an online coding competition for developers to showcase their coding skills and win exciting prizes. This contest begins on October 9th at 10 AM IST and will be open for 72 hours. <span class="tebal">This contest is open to participants from India only. The ratings of this contest will reflect on your HackerRank Profile.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview VI (U.S.)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jul 31st 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        Join HackerRank’s Hack the Interview, a university coding contest where you can show off your skills and practice for interviews. The top scorers from the U.S. will have a chance to win Amazon gift cards worth up to $500 and have their results shared with sponsor companies.
+                                        <br><br>
+                                        This contest begins <span class="tebal">Friday, July 31st at 12 p.m. EDT / 9 a.m. PDT</span>. You will have 60 hours to complete a series of coding challenges.
+                                        <br>
+                                    </p>
+                                    <div class="group-picture">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587651999-5b2c315fc1-First2.png" alt="Hack the Interview VI 1">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652042-59395f62bb-Middle2.png" alt="Hack the Interview VI 2">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652357-e3d867d8a0-Third1.png" alt="Hack the Interview VI 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview VI (Asia Pacific)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jul 31st 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        Join HackerRank’s Hack the Interview coding contest to show off your skills and practice for interviews. The top scorers from the <a href="https://en.wikipedia.org/wiki/Asia-Pacific">Asia Pacific region</a> will have a chance to win Amazon gift cards worth up to $500.
+                                        <br><br>
+                                        This contest begins <span class="tebal">Friday, July 31st at 4 p.m. GMT / 9:30 p.m. IST</span>. You will have 60 hours to complete a series of coding challenges.
+                                        <br>
+                                    </p>
+                                    <div class="group-picture">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587651999-5b2c315fc1-First2.png" alt="Hack the Interview VI 1">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652042-59395f62bb-Middle2.png" alt="Hack the Interview VI 2">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652357-e3d867d8a0-Third1.png" alt="Hack the Interview VI 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview V (Asia Pacific)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jun 26th 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        Join HackerRank’s Hack the Interview coding contest to show off your skills and practice for interviews. The top scorers from the <a href="https://en.wikipedia.org/wiki/Asia-Pacific">Asia Pacific region</a> will have a chance to win Amazon gift cards worth up to $500.
+                                        <br><br>
+                                        This contest begins on <span class="tebal">Friday, June 26th at 4 p.m. GMT / 9:30 p.m. IST</span>. You will have 60 hours to complete a series of coding challenges.
+                                        <br>
+                                    </p>
+                                    <div class="group-picture">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587651999-5b2c315fc1-First2.png" alt="Hack the Interview V 1">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652042-59395f62bb-Middle2.png" alt="Hack the Interview V 2">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652357-e3d867d8a0-Third1.png" alt="Hack the Interview V 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview V (U.S.)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            Jun 26th 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        Join HackerRank’s Hack the Interview, a university coding contest where you can show off your skills and practice for interviews. The top scorers from the U.S. will have a chance to win Amazon gift cards worth up to $500 and have their results shared with sponsor companies.
+                                        <br><br>
+                                        This contest begins on <span class="tebal">Friday June 26th at 12 p.m. EDT / 9 a.m. PDT</span>. You will have 60 hours to complete a series of coding challenges.
+                                        <br>
+                                    </p>
+                                    <div class="group-picture">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587651999-5b2c315fc1-First2.png" alt="Hack the Interview V 1">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652042-59395f62bb-Middle2.png" alt="Hack the Interview V 2">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652357-e3d867d8a0-Third1.png" alt="Hack the Interview V 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview IV (U.S.)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            May 29th 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        Join HackerRank’s Hack the Interview, a university coding contest where you can show off your skills and practice for interviews. The top scorers from the U.S. will have a chance to win prizes and have their results shared with sponsor companies.
+                                        <br><br>
+                                        This contest begins on <span class="tebal">Friday May 29th at 12 p.m. EDT / 9 a.m. PDT</span>. You will have 60 hours to complete a series of coding challenges.
+                                        <br>
+                                        <span class="tebal">Prizes:</span> First, second, and third place winners will receive a digital Amazon gift card in the following amounts.
+                                    </p>
+                                    <div class="group-picture">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587651999-5b2c315fc1-First2.png" alt="Hack the Interview V 1">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652042-59395f62bb-Middle2.png" alt="Hack the Interview V 2">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652357-e3d867d8a0-Third1.png" alt="Hack the Interview V 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contests-container">
+                            <div class="box-contests-archived">
+                                <div class="inside-box">
+                                    <h4>
+                                        Hack the Interview IV (Asia Pacific)
+                                    </h4>
+                                    <div class="description">
+                                        <span class="jadwal">
+                                            May 29th 2020, 11:00 pm WIB
+                                        </span>
+                                        <div class="view-sign">
+                                            <span class="status">
+                                                Ended
+                                            </span>
+                                            <a href="#">
+                                                <div class="view-button">
+                                                    View Challenges
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="penjelasan">
+                            <div class="isi-penjelasan">
+                                <div class="text-penjelasan">
+                                    <h5 class="rated-title">Unrated Contest</h5>
+                                    <p class="rated-text">
+                                        Join HackerRank’s Hack the Interview coding contest to show off your skills and practice for interviews. The top scorers from the <a href="https://en.wikipedia.org/wiki/Asia-Pacific">Asia Pacific region</a> will have a chance to win Amazon gift cards worth up to $500.
+                                        <br><br>
+                                        This contest begins on <span class="tebal">Friday May 29th at 4 p.m. GMT / 9:30 p.m. IST</span>. You will have 60 hours to complete a series of coding challenges.
+                                        <br>
+                                    </p>
+                                    <div class="group-picture">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587651999-5b2c315fc1-First2.png" alt="Hack the Interview V 1">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652042-59395f62bb-Middle2.png" alt="Hack the Interview V 2">
+                                        <img src="https://s3.amazonaws.com/hr-assets/0/1587652357-e3d867d8a0-Third1.png" alt="Hack the Interview V 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="more-archived-contests">
+                        <a href="#">Show More Archived Contests</a>
+                    </div>
+
+                </div>
+
+                <div class="right-container">
+                    <div class="right-box">
+                        <h5 class="right-title">
+                            ADMINISTRATION
+                        </h5>
+                        <ul class="right-list">
+                            <li><a href="#">Create Contest</a></li>
+                            <li class="list-padding"><a href="#">Manage Contest</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="right-box">
+                        <h5 class="right-title">
+                            FILTER
+                        </h5>
+                        <ul class="right-list">
+                            <li>
+                                <div class="filter-container">
+                                    <input type="checkbox" value="rated">
+                                    <label for="rated">
+                                        Rated
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="tutorials">
+                                    <label for="tutorials">
+                                        Tutorials
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="algorithms">
+                                    <label for="algorithms">
+                                        Algorithms
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="data_structures">
+                                    <label for="data_structures">
+                                        Data Structures
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="mathematics">
+                                    <label for="mathematics">
+                                        Mathematics
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="C">
+                                    <label for="C">
+                                        C
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="artificial_intelligence">
+                                    <label for="artificial_intelligence">
+                                        Artificial Intelligence
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="C++">
+                                    <label for="C++">
+                                        C++
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="java">
+                                    <label for="java">
+                                        Java
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="python">
+                                    <label for="python">
+                                        Python
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="ruby">
+                                    <label for="ruby">
+                                        Ruby
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="sql">
+                                    <label for="sql">
+                                        SQL
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="databases">
+                                    <label for="databases">
+                                        Databases
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="distributed">
+                                    <label for="distributed">
+                                        Distributed Systems
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="linux">
+                                    <label for="linus">
+                                        Linux Shell
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="functional">
+                                    <label for="functional">
+                                        Functional Programming
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="regex">
+                                    <label for="regex">
+                                        Regex
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="general">
+                                    <label for="general">
+                                        General Programming
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="filter-item">
+                                <div class="filter-container">
+                                    <input type="checkbox" value="security">
+                                    <label for="security">
+                                        Security
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="quick-links">
+                        <h5 class="right-title">
+                            QUICK LINKS
+                        </h5>
+                        <ul class="right-list">
+                            <li><a href="#">Archived Contest</a></li>
+                            <li class="list-padding"><a href="#">College Contest</a></li>
+                            <li class="list-padding"><a href="#">Contest Calendar</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <ul class="footer-list">
+                <li class="footer-link"><a href="#">Contest Calendar</a></li>
+                <li class="footer-link"><a href="#">Blog</a></li>
+                <li class="footer-link"><a href="#">Scoring</a></li>
+                <li class="footer-link"><a href="#">Environment</a></li>
+                <li class="footer-link"><a href="#">FAQ</a></li>
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="#">Support</a></li>
+                <li class="footer-link"><a href="#">Careers</a></li>
+                <li class="footer-link"><a href="#">Terms Of Service</a></li>
+                <li class="footer-link"><a href="#">Privacy Policy</a></li>
+                <li class="footer-link"><a href="#">Request a Feature</a></li>
+            </ul>
+        </footer>
+
+        <script type="text/javascript" src="js/Compete.js"></script>
+
+    </body>
+</html>
